@@ -9,8 +9,8 @@
 }
 
 .card-body {
-    width: calc(100% - 40px);
-    height: calc(210px - 40px);
+    width: calc(100% - 40px - 2px);
+    height: calc(210px - 40px - 2px);
     padding: 20px;
     display: flex;
     flex-direction: row;
