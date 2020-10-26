@@ -1,0 +1,104 @@
+.data {
+    width: 100%;
+    height: calc(100% - 85px);
+    overflow: auto;
+    border: 1px solid #404040;    
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.card-body {
+    width: calc(100% - 40px);
+    height: calc(210px - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #404040;
+    margin-bottom: 10px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-profile {
+    height: 100%;
+    width: 150px;
+    border: 1px solid #404040;
+}
+
+.card-data {
+    height: 100%;
+    width: calc(100% - 165px);
+    margin-left: 15px;
+}
+
+.user {
+    width: 30%;
+    height: 30px;
+    margin-right: 15px;
+    border: #404040 1px solid;
+}
+
+.user-name {
+    width: calc(100% - 30% - 15px);
+    height: 30px;
+    border: #404040 1px solid;
+}
+
+.user-email {
+    width: 100%;
+    height: 30px;
+    margin: 15px 0px;
+    border: #404040 1px solid;
+}
+
+.user-bio {
+    width: 100%;
+    height: calc(170px - 90px);
+    border: #404040 1px solid;
+}
+
+.align-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 614px) {
+    .card-body {
+        height: calc(100vh - 40px - 85px - 30px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-data {
+        width: 100%;
+        margin: 0px;
+        height: 50%;
+    }
+
+    .img-profile {
+        height: 40%;
+        width: 50%;
+        margin-bottom: 15px;
+        max-width: 150px;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .user {
+        width: 100%;
+    }
+
+    .user-name {
+        width: 100%;
+        margin-top:  15px;
+    }
+}
